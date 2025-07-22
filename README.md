@@ -117,9 +117,14 @@ Generate a new tracking number.
 }
 ```
 
-### Example Request 
+### Example Request (localhost)
 ```bash
 curl "http://localhost:8080/next-tracking-number?origin_country_id=MY&destination_country_id=ID&weight=1.234&created_at=2025-07-21T10:30:00%2B07:00&customer_id=de619854-b59b-425e-9db4-943979e1bd49&customer_name=RedBox%20Logistics&customer_slug=redbox-logistics"
 
+```
+
+### Example Request (cloud)
+```bash
+curl -X GET "https://tracking-number-generator-production-9890.up.railway.app/next-tracking-number?origin_country_id=MY&destination_country_id=ID&weight=1.234&created_at=2025-07-21T19:00:00%2B08:00&customer_id=de619854-b59b-425e-9db4-943979e1bd49&customer_name=RedBox%20Logistics&customer_slug=redbox-logistics"
 ```
 
